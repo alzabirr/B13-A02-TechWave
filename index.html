@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en" class="h-full">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <title>Podcast Hero Section</title>
+</head>
+
+<body class="h-full">
+    <!-- header area  -->
+    <header class="bg-[url(./assets/hero-bg.png)] h-screen bg-cover bg-cover text-white">
+        <!-- nav area  -->
+        <nav class="max-w-7xl mx-auto flex justify-between items-center p-5">
+            <!-- logo -->
+            <img src="./assets/logo.png" alt="">
+
+            <!-- menu -->
+            <ul class="flex gap-10 text-lg">
+                <li class="hover:text-green-400 cursor-pointer">About</li>
+                <li class="hover:text-green-400 cursor-pointer">Episodes</li>
+                <li class="hover:text-green-400 cursor-pointer">Host</li>
+            </ul>
+
+            <!-- button -->
+            <button
+                class="bg-gradient-to-r from-[#F7E93F] via-[#FB09B4] to-[#9100F8] text-white px-8 py-3 rounded-full text-lg font-semibold flex items-center gap-2"><img
+                    src="./assets/arrow.png" alt=""> Subscribe
+            </button>
+        </nav>
+
+        <!-- main hero content -->
+        <main class="flex flex-col justify-center items-center text-center h-[calc(100vh-80px)] relative">
+            <!-- microphone + circle wrapper -->
+            <div class="relative w-[250px] h-[250px] flex justify-center items-center">
+                <!-- circle image (bottom) -->
+                <img src="./assets/hero-circle.png" alt="circle" class="w-full h-full object-contain">
+
+                <!-- microphone image (top) -->
+                <img src="./assets/microphone.png" alt="microphone"
+                    class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 ">
+            </div>
+
+            <!-- text area -->
+            <h1 class="text-5xl font-bold mb-4 drop-shadow-lg mt-6">TechWave</h1>
+            <p class="text-xl mb-6 max-w-xl">
+                Your daily dose of tech insights, productivity hacks, and personal growth
+            </p>
+
+            <!-- gradient button -->
+            <button
+                class="bg-gradient-to-r from-[#F7E93F] via-[#FB09B4] to-[#9100F8] text-white px-8 py-3 rounded-full text-lg font-semibold flex items-center gap-2"><img
+                    src="./assets/spotify.png" alt=""> Listen On Spotify
+            </button>
+        </main>
+
+    </header>
+</body>
+
+</html>
